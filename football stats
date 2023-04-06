@@ -1,0 +1,34 @@
+public class FootballStats extends PlayerStats
+{
+    protected int pass;
+
+
+    public FootballStats(String player, String team)
+    {
+        super(player, team);
+        pass = 0;
+    }
+
+    public void score()
+    {
+        score += 6;
+    }
+
+
+    public void gainPass(int passIn)
+    {
+        pass += passIn;
+    }
+
+    public int getPass()
+    {
+        return pass;
+    }
+
+    public String toString()
+    {
+        String result = super.toString();
+        result += "\nPass: " + pass;
+        return result;
+    }
+}

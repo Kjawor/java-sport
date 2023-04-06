@@ -1,0 +1,21 @@
+public class Players
+{
+
+    public static void main(String [] args)
+    {
+        CricketStats player1;
+        FootballStats player2;
+
+        player1 = new CricketStats("Umar Gul", "Thunder");
+        player2 = new FootballStats("Patric Bamford", "Leeds United");
+
+        player1.score();
+        player2.score();
+        player1.getHit();
+        player2.gainPass(5);
+
+        System.out.println(player1);
+        System.out.println();
+        System.out.println(player2);
+    }
+}

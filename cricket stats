@@ -1,0 +1,50 @@
+public class CricketStats extends PlayerStats
+{
+    protected int six, catches;
+
+    public CricketStats(String player, String team)
+    {
+        super(player, team);
+        six = 0;
+        catches = 0;
+    }
+
+
+    public void score()
+    {
+        score += 1;
+    }
+
+ 
+    public void getHit()
+    {
+        six += 1;
+    }
+
+
+    public void takingCtaches()
+    {
+        catches += 1;
+    }
+
+
+    public int getHits()
+    {
+        return six;
+    }
+
+
+    public int getCathes()
+    {
+        return catches;
+    }
+
+
+    public String toString()
+    {
+        String result = super.toString();
+        result += "\nHits: " + six;
+        result += "\nCatches: " + catches;
+        return result;
+    }
+}
